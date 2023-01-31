@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tour y Agencia de Viajes</title>
+        <!--font awesome cdn-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!--Css styles-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--swiper js-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+            />
+    </head>
+
+    <body>
+
+        <!--Seccion Header Inicial-->
+
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <a href="#" class="logo"><span>S</span>pringtravel</a>
+            <nav class="navbar">
+                <a href="#home">inicio</a>
+                <a href="#book">reserva</a>
+                <a href="#packages">planes</a>
+                <a href="#services">servicios</a>
+                <a href="#gallery">galeria</a>
+                <a href="#review">opiniones</a>
+                <a href="#contact">contacto</a>
+            </nav>
+
+            <div class="icons">
+                <i class="fas fa-search" id="search-btn"></i>
+                <i class="fas fa-user" id="login-btn"></i>
+
+            </div>
+
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="Buscar">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+        </header>
+        <!--Seccion Header Final-->
+
+
+        <!---formulario de login--->
+
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="Ingresa tu email">
+                <input type="password" class="box" placeholder="Ingresa tu
+                    contraseña">
+                <input type="submit" value="Ingresa ahora" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">recuerdame</label>
+                <p>olvidaste tu contraseña?<a href="#"> ingresa aqui</a></p>
+                <p>no tienes una cuenta?<a href="#"> registrate ahora</a></p>
+            </form>
+        </div>
+
+        <!--Seccion home inicial-->
+
+        <section class="home" id="home">
+
+            <div class="content">
+                <h3>nuestra aventura vale la pena</h3>
+                <p>descubre nuevos lugares con nosotros, la aventura espera por
+                    ti</p>
+                <a href="#" class="btn">descubre mas</a>
+            </div>
+
+
+            <div class="controls">
+                <span class="vid-btn active" data-src="images/guatape.mp4"></span>
+                <span class="vid-btn" data-src="images/cristales.mp4"></span>
+                <span class="vid-btn" data-src="images/capurgana.mp4"></span>
+                <span class="vid-btn" data-src="images/lajas.mp4"></span>
+                <span class="vid-btn" data-src="images/norcasia.mp4"></span>
+            </div>
+
+            <div class="video-container">
+                <video src="images/guatape.mp4" id="video-slider" loop autoplay
+                    muted></video>
+
+            </div>
+        </section>
+
+        <!--Seccion home final-->
+
+        <!--Seccion reservas inicial-->
+
+        <section class="book" id="book">
+
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>a</span>
+                <span class="space"></span>
+                <span>y</span>
+                <span>a</span>
+            </h1>
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="images/beach.jpg" alt="">
+                </div>
+
+                <form action="">
+                    <div class="inputbox">
+                        <h3>lugar</h3>
+                        <input type="text" placeholder="ingrese el nombre">
+                    </div>
+                    <div class="inputbox">
+                        <h3>personas</h3>
+                        <input type="numer" placeholder="numero de invitados">
+                    </div>
+                    <div class="inputbox">
+                        <h3>ingreso</h3>
+                        <input type="date" placeholder="fecha de llegada">
+                    </div>
+                    <div class="inputbox">
+                        <h3>partida</h3>
+                        <input type="date" placeholder="fecha de salida">
+                    </div>
+                    <input type="submit" class="btn" value="reserva ahora">
+                </form>
+
+            </div>
+
+        </section>
+
+        <!--Seccion reservas final-->
+
+
+        <!--Seccion planes inicial-->
+
+        <section class="packages" id="packages">
+
+            <h1 class="heading">
+                <span>p</span>
+                <span>l</span>
+                <span>a</span>
+                <span>n</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/medellin.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> medellin</h3>
+                        <p>Medellín es conocida como la 'Ciudad de la Eterna
+                            Primavera' por el agradable tiempo que presenta todo
+                            el año. Así que, en general, podrás lucir ropa de
+                            primavera-verano y añadir una chaqueta ligera</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> $90.000 <span>$120.000</span></div>
+                        <a href="#" class="btn">reserva ahora</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/bogota.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> bogota</h3>
+                        <p>La ciudad también ofrece una amplia variedad de
+                            restaurantes de comida internacional y sitios
+                            especializados en el esparcimiento nocturno,
+                            destacan igualmente sus parques, museos, centros
+                            comerciales y su arquitectura.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> $90.000 <span>$120.000</span></div>
+                        <a href="#" class="btn">reserva ahora</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/cali.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> cali</h3>
+                        <p>Cali, la ciudad colombiana es cuna de la salsa, un
+                            afortunado clima, gastronomía exquisita y cultura,
+                            mucha cultura para apreciar. 'Cali es Cali y lo
+                            demás es loma', diría cualquier caleño. Ciudad
+                            industrial de Colombia.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> $90.000 <span>$120.000</span></div>
+                        <a href="#" class="btn">reserva ahora</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/cartagena.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> cartagena</h3>
+                        <p>Cartagena de Indias, Distrito Turístico y Cultural,
+                            es el destino turístico más importante de Colombia y
+                            uno de los más reconocidos en el mundo por su
+                            historia, sus playas y el calor humano propio del
+                            Caribe.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> $90.000 <span>$120.000</span></div>
+                        <a href="#" class="btn">reserva ahora</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/san andres.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> san andres</h3>
+                        <p>Posee un hermoso mar de siete colores, sus
+                            paradisíacos paisajes y playas, la calidez y
+                            tranquilidad de la gente y su exquisita gastronomía
+                            a base de langosta, pargos, caracoles y cangrejos
+                            hacen de San Andrés un paraíso vacacional.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> $90.000 <span>$120.000</span></div>
+                        <a href="#" class="btn">reserva ahora</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/amazonas.jpg" alt="">
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"></i> amazonas</h3>
+                        <p>La Selva Amazónica, el mayor bosque tropical del
+                            mundo, suele aparecer en el imaginario popular a
+                            través de imágenes de bosques densos, formados por
+                            árboles altos e imponentes con troncos rollizos y
+                            valiosos</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price"> $90.000 <span>$120.000</span></div>
+                        <a href="#" class="btn">reserva ahora</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!--Seccion planes final-->
+
+        <!--Seccion servicios inicial-->
+
+        <section class="services" id="services">
+
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>i</span>
+                <span>o</span>
+                <span>s</span>
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="fas fa-hotel"></i>
+                    <h3>hoteles economicos</h3>
+                    <p>disfruta de los mejores precios en hoteleria a nivel
+                        nacional durante toda la temporada del año.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-utensils"></i>
+                    <h3>comidas y bebidas</h3>
+                    <p>lo mejor en gastronomia nacional e internacional en los
+                        diferentes sitios de nuestro territorio nacional.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>guias y acompañantes</h3>
+                    <p>podras contratar los mejores y calificados guias para que
+                        tus tour sean la mejor y mas grata experiencia.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>aldededor del pais</h3>
+                    <p>puedes crear un tour o paquete el cual te permita viajar
+                        a diferentes puntos de nuestro pais.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-plane"></i>
+                    <h3>viajes rapidos</h3>
+                    <p>contamos con el servicio de viajes rapidos entre
+                        destinos, para mejorar el tiempo de tus visitas.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-hiking"></i>
+                    <h3>aventuras</h3>
+                    <p>diferentes tipos de aventuras en cada uno de los lugares
+                        que visites en nuestro territorio nacional.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Seccion servicios final-->
+
+        <!--galeria seccion inicial-->
+
+        <section class="gallery" id="gallery">
+
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>i</span>
+                <span>a</span>
+            </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="images/peñol.jpg" alt="">
+                    <div class="content">
+                        <h3>el peñol</h3>
+                        <p>Es un monolito de 220 metros de altura ubicado entre
+                            los municipios de Guatapé y El Peñol.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/lajas.jpg" alt="">
+                    <div class="content">
+                        <h3>santuario de las lajas</h3>
+                        <p>Este bello templo posee muchas piedras preciosas y
+                            lujos dentro de ella, es muy conocida por su cuadro
+                            con corona de oro.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/chicamocha.jpg" alt="">
+                    <div class="content">
+                        <h3>cañon del chicamocha</h3>
+                        <p>Parque Chicamocha es el Columpio del fin del mundo y
+                            otros deportes extremos como torrentismo, parapente,
+                            cable vuelo etc.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/capurgana.jpg" alt="">
+                    <div class="content">
+                        <h3>capurgana</h3>
+                        <p>Es un lugar paradisíaco, aislado y sólo se puede
+                            llegar por vía aérea o marítima. La ciudad es
+                            bastante pequeña.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/cabovela.jpg" alt="">
+                    <div class="content">
+                        <h3>cabo de la vela</h3>
+                        <p>Es el lugar más visitado de la Guajira por su
+                            cercanía y belleza. Zona desertica con muy buenas
+                            rancherías para descansar.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/llanos.jpg" alt="">
+                    <div class="content">
+                        <h3>llanos orientales</h3>
+                        <p>Tiene grandes tesoros y zonas naturales como el
+                            Parque Nacional del Tuparro, reserva mundial por
+                            parte de la Unesco.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/cafetero.jpg" alt="">
+                    <div class="content">
+                        <h3>eje cafetero</h3>
+                        <p>Belleza Natural: Vivir en el eje cafetero es
+                            disfrutar de la naturaleza, el aire puro, las
+                            caminatas por las montañas.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/cristales.jpg" alt="">
+                    <div class="content">
+                        <h3>caño cristales</h3>
+                        <p>Es llamado así porque a través de sus aguas
+                            cristalinas puedes observar tonos amarillos, azules,
+                            verdes, rojos y negros</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/norcasia.jpg" alt="">
+                    <div class="content">
+                        <h3>norcasia</h3>
+                        <p>municipio más joven del departamento de Caldas y sus
+                            atractivos turísticos son el Embalse de Amaní, los
+                            ríos La Miel y Manso.</p>
+                        <a href="#" class="btn">ver mas</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--galeria seccion final-->
+
+        <!--opiniones seccion inicial-->
+
+        <section class="review" id="review">
+
+            <h1 class="heading">
+                <span>o</span>
+                <span>p</span>
+                <span>i</span>
+                <span>n</span>
+                <span>i</span>
+                <span>o</span>
+                <span>n</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+
+            <div class="swiper review-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="images/review-1.jpg" alt="">
+                            <h3>maria gomez</h3>
+                            <p>tuve la oportunidad de conocer norcasia.un
+                                municipio hermoso , sus paisajes su gente . las
+                                reservas se realizaron de manera agil y
+                                eficiente por parte del personal . muy
+                                satisfecha con el servicio prestado por el
+                                personal de la agencia.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="images/review-3.jpg" alt="">
+                            <h3>carlos herrera</h3>
+                            <p>para mi fue una experiencia maravilla el poder
+                                conocer diferentes lugares de nuestro pais , su
+                                cultura y su gastronomia y todo desde un mismo
+                                lugar sin tener que hacer reservas ni pagos
+                                desde otros sitios . Excelente servicio
+                                prestado.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="images/review-2.jpg" alt="">
+                            <h3>andrea parra</h3>
+                            <p>disfrute las vacaciones con mi familia en
+                                capurgana. siempre quise conocer este magico
+                                lugar. los precios fueron muy economicos y pude
+                                asi realizar reservas para toda mi familia .
+                                encantada con el servicio . lo volveria a tomar
+                                sin lugar a dudas.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img src="images/review-4.jpg" alt="">
+                            <h3>camilo hernandez</h3>
+                            <p>viaje al cañon del chicamocha para disfrutar al
+                                maximo de los deportes extremos. Excelente el
+                                servicio prestado y es un lugar unico para este
+                                tipo de aventuras. sus guias son muy
+                                profesionales en el servicio prestado . los
+                                recomiendo. </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--opiniones seccion final-->
+
+
+        <!--contacto seccion inicial-->
+        <section class="contact" id="contact">
+
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+                <span>o</span>
+            </h1>
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="images/contact.jpg" alt="">
+                </div>
+                <form action="">
+                    <div class="inputbox">
+                        <input type="text" placeholder="nombres">
+                        <input type="email" placeholder="correo electronico">
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" placeholder="numero telefonico">
+                        <input type="text" placeholder="asunto">
+                    </div>
+                    <textarea placeholder="mensaje" name="" id="" cols="30"
+                        rows="10"></textarea>
+                    <input type="submit" class="btn" value="enviar mensaje">
+                </form>
+
+            </div>
+
+
+        </section>
+
+        <!--contacto seccion final-->
+
+        <!---- seccion marca ---->
+
+        <section class="brand-container">
+            <div class="swiper brand-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/avianca.svg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="images/colombia.svg"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="images/cafe.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/comida.png"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="images/spa.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/libro.jpg"
+                            alt=""></div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!---- seccion footer ---->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>acerca de nosotros</h3>
+                    <p>somos una agencia de turismo la cual te permite disfrutar
+                        de la mejor experiencia para tus vacaciones y planes en
+                        un solo lugar, y en todo el territorio colombiano,
+                        mejorando asi la experiencia del usuario a los mejores
+                        precios del mercado. </p>
+                </div>
+                <div class="box">
+                    <h3>sucursales</h3>
+                    <a href="#">medellin</a>
+                    <a href="#">bogota</a>
+                    <a href="#">cali</a>
+                    <a href="#">cartagena</a>
+                </div>
+                <div class="box">
+                    <h3>enlaces rapidos</h3>
+                    <a href="#home">Inicio</a>
+                    <a href="#book">Reserva</a>
+                    <a href="#packages">Planes</a>
+                    <a href="#services">Servicios</a>
+                    <a href="#gallery">Galeria</a>
+                    <a href="#review">Opiniones</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+                <div class="box">
+                    <h3>siguenos</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                </div>
+            </div>
+            <h1 class="credit">todos los derechos reservados</h1>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!--Js File-->
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>
